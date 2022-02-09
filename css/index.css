@@ -59,7 +59,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 25px;
-  overflow-y: scroll;
 }
 
 .header__upgrades button, .header__upgrades-sec button {
