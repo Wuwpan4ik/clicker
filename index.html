@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="slurp" content="noydir" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" href="/css/index.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container" style="position: relative;">
+		<button class="header__activated" onclick="use_header()">Хедер</button>
+		<div class="header">
+			<div class="header__logo">
+				<a href="#"><img src="./images/avatar-PhotoRoom.png" alt="Аватар"></a>
+			</div>
+			<ul class="header__list">
+				<li class="header__item"><button onclick="use_main()">Главная</button></li>
+				<li class="header__item"><button onclick="use_upgrade()">За клик</button></a></li>
+				<li class="header__item"><button onclick="use_upgrade_in_sec()">В секунду</button></li>
+			</ul>
+			<div class="header__upgrades">
+				<button onclick="buyUpgrade(this)" id="upgradeClick_1" class="header__upgrade">
+					<div class="header__upgrade-image"><img
+							src="./images/png-clipart-sword-weapon-pixel-art-pixelation-pixel-angle-katana.png" alt="">
+					</div>
+					<div class="header__upgrade-title">Меч зари</div>
+					<div class="header__upgrade-count" id="count">0</div>
+					<div class="header__upgrade-cost" id="cost">10$</div>
+				</button>
+				<button onclick="buyUpgrade(this)" id="upgradeClick_2" class="header__upgrade">
+					<div class="header__upgrade-image"><img
+							src="./images/png-clipart-sword-weapon-pixel-art-pixelation-pixel-angle-katana.png" alt="">
+					</div>
+					<div class="header__upgrade-title">Меч зари</div>
+					<div class="header__upgrade-count" id="count">0</div>
+					<div class="header__upgrade-cost" id="cost">10$</div>
+				</button>
+				<button onclick="buyUpgrade(this)" id="upgradeClick_3" class="header__upgrade">
+					<div class="header__upgrade-image"><img
+							src="./images/png-clipart-sword-weapon-pixel-art-pixelation-pixel-angle-katana.png" alt="">
+					</div>
+					<div class="header__upgrade-title">Меч зари</div>
+					<div class="header__upgrade-count" id="count">0</div>
+					<div class="header__upgrade-cost" id="cost">10$</div>
+				</button>
+			</div>
+			<div class="header__upgrades-sec deactive">
+				<button onclick="buyUpgrade(this)" id="upgradeAuto_1" class="header__upgrade-sec">
+					<div class="header__upgrade-image"><img
+							src="./images/png-clipart-sword-weapon-pixel-art-pixelation-pixel-angle-katana.png" alt="">
+					</div>
+					<div class="header__upgrade-title">Меч зари</div>
+					<div class="header__upgrade-count" id="count">0</div>
+					<div class="header__upgrade-cost" id="cost">10$</div>
+				</button>
+				<button onclick="buyUpgrade(this)" id="upgradeAuto_2" class="header__upgrade-sec">
+					<div class="header__upgrade-image"><img
+							src="./images/png-clipart-sword-weapon-pixel-art-pixelation-pixel-angle-katana.png" alt="">
+					</div>
+					<div class="header__upgrade-title">Меч зари</div>
+					<div class="header__upgrade-count" id="count">0</div>
+					<div class="header__upgrade-cost" id="cost">10$</div>
+				</button>
+				<button onclick="buyUpgrade(this)" id="upgradeAuto_3" class="header__upgrade-sec">
+					<div class="header__upgrade-image"><img
+							src="./images/png-clipart-sword-weapon-pixel-art-pixelation-pixel-angle-katana.png" alt="">
+					</div>
+					<div class="header__upgrade-title">Меч зари</div>
+					<div class="header__upgrade-count" id="count">0</div>
+					<div class="header__upgrade-cost" id="cost">10$</div>
+				</button>
+			</div>
+			<div class="main__coins" id="coins">0 $</div>
+		</div>
+		<div class="main">
+			<div class="main__top">
+				<div class="main__wave" id="wave">1</div>
+				<span>Здоровье монстра</span>
+				<div class="main__health" id="health">10</div>
+			</div>
+			<div class="main__center" id="monster">
+				<img style="width:100%" src="./images/monster1.png" alt="">
+			</div>
+			<div class="main__bottom">
+				<div class="main__damage" id="mainDamage">1 урон</div>
+				<div class="main__damage-auto" id="DamageInSec">0 урона в секунду</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/game.js"></script>
+	<script src="./js/use.js"></script>
+</body>
+
+</html>
