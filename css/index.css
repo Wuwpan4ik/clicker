@@ -1,5 +1,5 @@
 body {
-  background: url("/images/back1.jpg") no-repeat;
+  background: url("./images/back1.jpg") no-repeat;
   background-size: inherit;
   height: 100vh;
 }
